@@ -8,11 +8,13 @@ import img4 from '../assets/af31e885400faf5d34d804a21ff83851.jpg'
 import bikeRideImg from '../assets/bike-and-b_1693079646eSb59n.webp'
 import bikeRideImg2 from '../assets/bike-to-tr_1693079465OibCKT.webp'
 import waterFallImg from '../assets/waterfall_1693140591QfdwUr.webp'
-
+import product1 from '../assets/mountain-b_1693287593rOnMaD.jpeg'
 import { SlCalender } from "react-icons/sl";
-import { Button } from 'flowbite-react';
-import { FaPhone } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
+
+import { Button, Label } from 'flowbite-react';
 export default function Home() {
   const homeBannerImages=[img1,img2,img3,img4]
   return (
@@ -75,7 +77,10 @@ export default function Home() {
       {/* updates section */}
       <section>
       <div className='relative bg-gray-200 mt-10 pt-5 pb-5'>
+        <div className='flex justify-between w-11/12 mx-auto'>
         <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR UPDATES</h2>
+        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
+        </div>
         <div className='pt-14 block w-11/12 mx-auto md:flex gap-20'>
           <div className='flex-1'>
           <img src={waterFallImg} className="h-80 object-cover w-full rounded-md hover:transform hover:scale-95 transition duration-1000 ease-out" />
@@ -112,6 +117,70 @@ export default function Home() {
           </div>
           </div>
           </div>
+      </section>
+      {/* products section */}
+      <section>
+        <div className='pt-16 pb-10 bg-gray-950'>
+        <div className='flex justify-between w-11/12 mx-auto'>
+        <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR PRODUCTS</h2>
+        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
+        </div>
+        <div className='hidden md:flex flex-row gap-6 pt-5 pb-5 w-11/12 mx-auto'>
+          <div>
+            <img src={product1} alt='mountain bike'/>
+            <div className='bg-gray-200 p-3'>
+              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
+              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
+              <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
+            </div>
+          </div>
+          <div>
+          <img src={product1} alt='mountain bike'/>
+          <div className='bg-gray-200 p-3'>
+              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$200.00</span></h2>
+              <h3 className='font-semibold'>status: <span className='text-green-600'>Available</span></h3>
+              <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
+            </div>
+          </div>
+          <div>
+          <img src={product1} alt='mountain bike'/>
+          <div className='bg-gray-200 p-3'>
+              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
+              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
+              <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
+            </div>
+          </div>
+        </div>
+        {/* available on small devices only */}
+        <div className='lg:hidden w-11/12 mx-auto mt-6'>
+        <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} interval={3000}>
+      <div>
+        <img src={product1} alt="mountain bike" />
+        <div className='bg-gray-200 p-3'>
+              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
+              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
+              <Button className='mt-4 w-10/12 mx-auto' gradientDuoTone="greenToBlue">Enquire Now</Button>
+            </div>
+      </div>
+      <div>
+        <img src={product1} alt="Image 2" />
+        <div className='bg-gray-200 p-3'>
+              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$200.00</span></h2>
+              <h3 className='font-semibold'>status: <span className='text-green-600'>Available</span></h3>
+              <Button className='mt-4 w-10/12 mx-auto' gradientDuoTone="greenToBlue">Enquire Now</Button>
+            </div>
+      </div>
+      <div>
+        <img src={product1} alt="Image 3" />
+        <div className='bg-gray-200 p-3'>
+              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
+              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
+              <Button className='mt-4 w-10/12 mx-auto' gradientDuoTone="greenToBlue">Enquire Now</Button>
+            </div>
+      </div>
+    </Carousel>
+        </div>
+        </div>
       </section>
       </main>
     </div>

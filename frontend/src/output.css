@@ -1530,10 +1530,6 @@ input[type="range"]::-ms-fill-lower {
   width: 2.5rem;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-11 {
   width: 2.75rem;
 }
@@ -1634,6 +1630,10 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .min-w-11 {
@@ -2472,6 +2472,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(17 24 39 / 0.5);
 }
 
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
 .bg-green-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(222 247 236 / var(--tw-bg-opacity));
@@ -2881,6 +2886,10 @@ input[type="range"]::-ms-fill-lower {
   padding: 0.625rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -2963,6 +2972,10 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 1rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -3035,6 +3048,10 @@ input[type="range"]::-ms-fill-lower {
   padding-top: 0.25rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -3055,10 +3072,6 @@ input[type="range"]::-ms-fill-lower {
   padding-top: 1.25rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -3069,10 +3082,6 @@ input[type="range"]::-ms-fill-lower {
 
 .text-start {
   text-align: start;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .font-serif {
@@ -3431,6 +3440,11 @@ input[type="range"]::-ms-fill-lower {
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(194 120 3 / var(--tw-text-opacity));
+}
+
+.text-yellow-600 {
+  --tw-text-opacity: 1;
+  color: rgb(159 88 10 / var(--tw-text-opacity));
 }
 
 .text-yellow-700 {
@@ -3938,6 +3952,11 @@ input[type="range"]::-ms-fill-lower {
 
 .hover\:bg-gradient-to-br:hover {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(28 100 242 / var(--tw-text-opacity));
 }
 
 .hover\:text-cyan-700:hover {
@@ -5864,6 +5883,10 @@ input[type="range"]::-ms-fill-lower {
     display: flex;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-10 {
     height: 2.5rem;
   }
@@ -5988,14 +6011,6 @@ input[type="range"]::-ms-fill-lower {
     width: auto;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-10\/12 {
-    width: 83.333333%;
-  }
-
   .md\:max-w-xl {
     max-width: 36rem;
   }
@@ -6103,6 +6118,10 @@ input[type="range"]::-ms-fill-lower {
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 }
 
