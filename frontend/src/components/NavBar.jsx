@@ -8,7 +8,7 @@ export default function NavBarComp() {
          <Navbar fluid rounded>
       <Navbar.Brand as={Link} to="" className="">
         <img src={logo} className=" w-auto h-12" alt="beachLife Logo" />
-        <span className="pl-1  text-2xl text-red-700">Beach Life Fitness</span>
+        <span className="pl-1  text-2xl text-orange-500">Beach Life Fitness</span>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
