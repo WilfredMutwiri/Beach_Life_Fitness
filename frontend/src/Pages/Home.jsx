@@ -64,7 +64,7 @@ export default function Home() {
             <p className='leading-relaxed'>
             Indoor and Outdoor fitness group. We focus on physical fitness, empowerment and fun. Our passion is to create positive physical changes for all ages, sizes and fitness levels. We bring the adventures , you bring the energy
             </p>
-            <div className='flex flex-row gap-6 mt-10 w-10/12 md:w-full mx-auto'>
+            <div className='flex flex-row gap-6 mt-10 w-full justify-center md:justify-normal'>
               <Button className='flex' gradientDuoTone="greenToBlue"><FaPhone className='text-lg'/><span className='ml-3'>Call Us</span></Button>
               <Button className='flex' gradientDuoTone="greenToBlue"><MdEmail className='text-lg'/><span className='ml-3'>Email Us</span></Button>
             </div>
@@ -75,8 +75,8 @@ export default function Home() {
       {/* updates section */}
       <section>
       <div className='relative bg-gray-200 mt-10 pt-5 pb-5'>
-        <h2 className='text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR UPDATES</h2>
-        <div className='pt-16 block w-11/12 mx-auto md:flex gap-20'>
+        <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR UPDATES</h2>
+        <div className='pt-14 block w-11/12 mx-auto md:flex gap-20'>
           <div className='flex-1'>
           <img src={waterFallImg} className="h-80 object-cover w-full rounded-md hover:transform hover:scale-95 transition duration-1000 ease-out" />
           <h3 className='font-semibold text-orange-500 pt-3 pb-2 text-lg'>Waterfall Bike Adventure</h3>
@@ -88,7 +88,7 @@ export default function Home() {
             <Button className="" gradientDuoTone="greenToBlue">Read More..</Button>
             </div>
           </div>
-          <div className='flex-1'>
+          <div className='flex-1 mt-6 md:mt-0'>
           <img src={bikeRideImg2} className="h-80 object-cover w-full rounded-md hover:transform hover:scale-95 transition duration-1000 ease-out" />
           <h3 className='font-semibold text-orange-500 pt-3 pb-2 text-lg'>Bike and Beer Chale Island</h3>
             <p className='pt-4'>
@@ -99,7 +99,7 @@ export default function Home() {
             <Button className="" gradientDuoTone="greenToBlue">Read More..</Button>
             </div>
           </div>
-          <div className='flex-1'>
+          <div className='flex-1 mt-6 md:mt-0'>
           <img src={bikeRideImg} className="h-80 object-cover w-full rounded-md hover:transform hover:scale-95 transition duration-1000 ease-out" />
           <h3 className='font-semibold text-orange-500 pt-3 pb-2 text-lg'>Bike to Traditional Dance Adventure</h3>
           <p className='pt-1'>
