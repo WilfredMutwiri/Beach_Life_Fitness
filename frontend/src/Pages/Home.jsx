@@ -75,8 +75,8 @@ export default function Home() {
           </div>
         </section>
         <div className='w-full bg-gradient-to-r from-green-600 to-yellow-400 text-white mt-4 p-5'>
-          <p className='text-center font-semibold text-xl'>We are determined to offer the best services, making sure that you not only remain fit, but also maintain a good health.</p>
-          <p className='text-center font-semibold text-lg'>Visit us today!</p>
+          <p className='text-center font-semibold text-sm md:text-xl'>We are determined to offer the best services, making sure that you not only remain fit, but also maintain a good health.</p>
+          <p className='text-center font-semibold text-xs md:text-lg'>Visit us today!</p>
         </div>
       {/* updates section */}
       <section>
@@ -123,8 +123,8 @@ export default function Home() {
           </div>
       </section>
       <div className='w-full bg-gradient-to-r from-cyan-800 to-orange-800 text-white pt-8 pb-8 p-5'>
-          <p className='text-center font-semibold text-xl'>No more excuses, build those muscles with us today.</p>
-          <p className='text-center font-semibold text-lg'>We are hear to make your dream come true!</p>
+          <p className='text-center font-semibold text-sm md:text-xl'>No more excuses, build those muscles with us today.</p>
+          <p className='text-center font-semibold text-xs md:text-lg'>We are hear to make your dream come true!</p>
         </div>
       {/* products section */}
       <section>
