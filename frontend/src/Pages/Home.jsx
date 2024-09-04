@@ -74,9 +74,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className='w-full bg-gradient-to-r from-green-600 to-yellow-400 text-white mt-4 p-5'>
+          <p className='text-center font-semibold text-xl'>We are determined to offer the best services, making sure that you not only remain fit, but also maintain a good health.</p>
+          <p className='text-center font-semibold text-lg'>Visit us today!</p>
+        </div>
       {/* updates section */}
       <section>
-      <div className='relative bg-gray-200 mt-10 pt-5 pb-5'>
+      <div className='relative bg-gray-200 pt-5 pb-5'>
         <div className='flex justify-between w-11/12 mx-auto'>
         <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR UPDATES</h2>
         <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
@@ -118,6 +122,10 @@ export default function Home() {
           </div>
           </div>
       </section>
+      <div className='w-full bg-gradient-to-r from-cyan-800 to-orange-800 text-white pt-8 pb-8 p-5'>
+          <p className='text-center font-semibold text-xl'>No more excuses, build those muscles with us today.</p>
+          <p className='text-center font-semibold text-lg'>We are hear to make your dream come true!</p>
+        </div>
       {/* products section */}
       <section>
         <div className='pt-16 pb-10 bg-gray-950'>
