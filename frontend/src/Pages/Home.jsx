@@ -2,15 +2,15 @@ import React from 'react'
 import {Carousel} from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import img1 from '../assets/slider_default_img (1).webp'
-import img2 from '../assets/Deadlifter.jpeg'
-import img3 from '../assets/4c938d5c31afd9de3141420d08ac8455.jpg'
-import img4 from '../assets/af31e885400faf5d34d804a21ff83851.jpg'
+import img2 from '../assets/Deadlifter.webp'
+import img3 from '../assets/4c938d5c31afd9de3141420d08ac8455.webp'
+import img4 from '../assets/af31e885400faf5d34d804a21ff83851.webp'
 import bikeRideImg from '../assets/bike-and-b_1693079646eSb59n.webp'
 import bikeRideImg2 from '../assets/bike-to-tr_1693079465OibCKT.webp'
 import waterFallImg from '../assets/waterfall_1693140591QfdwUr.webp'
-import product1 from '../assets/mountain-b_1693287593rOnMaD.jpeg'
+import product1 from '../assets/mountain-b_1693287593rOnMaD.webp'
 import viewWaterfall from '../assets/beachlifefitnesskenya_1693076200hqBv4S.webp'
-import droneViewWaterfallImg from '../assets/droneWaterfall view.jpeg'
+import droneViewWaterfallImg from '../assets/droneWaterfall view.webp'
 
 import { SlCalender } from "react-icons/sl";
 import { FaArrowRight } from "react-icons/fa";
