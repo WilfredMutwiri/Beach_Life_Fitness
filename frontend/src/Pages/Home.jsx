@@ -40,9 +40,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-black bg-opacity-50 z-10 max-w-[1400px] h-[720px] -mt-[20px] md:h-[720px] w-full m-auto"></div>
           {/* Text Overlay */}
       <div className="-mt-[600px] md:-mt-[700px] relative inset-0 flex flex-col justify-center items-center text-white z-10">
-          <div className='flex w-full md:w-96 mx-auto pt-0 md:pt-28'>
+          <div className='flex w-full md:w-7/12 mx-auto pt-0 md:pt-28'>
           <div className='w-full mx-auto  z-50 p-0 md:p-3 font-bold'>
-          <h1 className=' text-center text-orange-500 font-semibold text-4xl md:text-7xl font-dancing'>Beach Life Fitness</h1>
+          <h1 className='shadow-sm shadow-gray-600 text-center text-orange-500 font-bold text-4xl md:text-7xl font-serif'>Beach Life Fitness</h1>
+          <h2 className='text-2xl text-white text-center pt-4'>~Kenya~</h2>
           </div>
           </div>
           <h2 className='text-white z-50 relative text-center font-serif text-xl md:text-3xl pt-5'>Train Like a Pro
