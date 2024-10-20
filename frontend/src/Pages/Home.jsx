@@ -9,6 +9,7 @@ import bikeRideImg from '../assets/bike-and-b_1693079646eSb59n.webp'
 import bikeRideImg2 from '../assets/bike-to-tr_1693079465OibCKT.webp'
 import waterFallImg from '../assets/waterfall_1693140591QfdwUr.webp'
 import product1 from '../assets/mountain-b_1693287593rOnMaD.webp'
+import product2 from '../assets/tent.webp'
 import viewWaterfall from '../assets/beachlifefitnesskenya_1693076200hqBv4S.webp'
 import droneViewWaterfallImg from '../assets/droneWaterfall view.webp'
 
@@ -143,7 +144,7 @@ export default function Home() {
         <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
         </div>
         <div className='hidden md:flex flex-row gap-6 pt-5 pb-5 w-11/12 mx-auto'>
-          <div>
+          <div className='flex-1'>
             <img src={product1} alt='mountain bike'/>
             <div className='bg-gray-200 p-3'>
               <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
@@ -152,8 +153,10 @@ export default function Home() {
               <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
             </div>
           </div>
-          <div>
-          <img src={product1} alt='mountain bike'/>
+          <div className='flex-1'>
+            <div className='h-72'>
+            <img src={product2} alt='mountain bike'/>
+            </div>
           <div className='bg-gray-200 p-3'>
               <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$200.00</span></h2>
               <h3 className='font-semibold'>status: <span className='text-green-600'>Available</span></h3>
@@ -161,8 +164,8 @@ export default function Home() {
               <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
             </div>
           </div>
-          <div>
-          <img src={product1} alt='mountain bike'/>
+          <div className='flex-1'>
+          <img src={product2} alt='mountain bike'/>
           <div className='bg-gray-200 p-3'>
               <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
               <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
@@ -183,7 +186,7 @@ export default function Home() {
             </div>
       </div>
       <div>
-        <img src={product1} alt="Image 2" />
+        <img src={product2} alt="Image 2" />
         <div className='bg-gray-200 p-3'>
               <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$200.00</span></h2>
               <h3 className='font-semibold'>status: <span className='text-green-600'>Available</span></h3>
@@ -191,7 +194,7 @@ export default function Home() {
             </div>
       </div>
       <div>
-        <img src={product1} alt="Image 3" />
+        <img src={product2} alt="Image 3" />
         <div className='bg-gray-200 p-3'>
               <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
               <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
