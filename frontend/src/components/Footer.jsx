@@ -1,10 +1,8 @@
 
 "use client";
 import { Footer } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsWhatsapp, BsInstagram,BsTwitterX,} from "react-icons/bs";
+import {BsFacebook, BsWhatsapp, BsInstagram, BsTiktok, BsYoutube,} from "react-icons/bs";
 import Logo from '../assets/logo-520698693.webp'
-import { MdEmail } from "react-icons/md";
-
 export function FooterComp() {
   return (
     <div className="">
@@ -30,8 +28,8 @@ export function FooterComp() {
             <div>
               <Footer.Title title="Follow us" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Facebook</Footer.Link>
-                <Footer.Link href="#">Instagram</Footer.Link>
+                <Footer.Link href="https://www.facebook.com/beachlifefitnesskenya?sfnsn=wa&mibextid=RUbZ1f" target="_blank">Facebook</Footer.Link>
+                <Footer.Link href="https://www.instagram.com/beachlifefitnesskenya/" target="_blank">Instagram</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -45,13 +43,13 @@ export function FooterComp() {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Beach-Life Fitness Kenya™" year={new Date().getFullYear()} />
+          <Footer.Copyright href="https://www.instagram.com/beachlifefitnesskenya/" target="_blank" by="Beach-Life Fitness Kenya™" year={new Date().getFullYear()} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="#" icon={BsFacebook} />
-            <Footer.Icon href="#" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitterX} />
-            <Footer.Icon href="#" icon={BsWhatsapp} />
-            <Footer.Icon href="#" icon={MdEmail} />
+            <Footer.Icon href="https://www.facebook.com/beachlifefitnesskenya?sfnsn=wa&mibextid=RUbZ1f" target="_blank"icon={BsFacebook} />
+            <Footer.Icon href="https://www.instagram.com/beachlifefitnesskenya/" target="_blank" icon={BsInstagram} />
+            <Footer.Icon href="https://www.tiktok.com/@beachlifefitnesskenya?_t=8lMARcbvPXS&_r=1" target="_blank" icon={BsTiktok} />
+            <Footer.Icon href="https://www.youtube.com/@beachlifefitnesskenya" target="_blank" icon={BsYoutube} />
+            <Footer.Icon href="#" target="_blank" icon={BsWhatsapp} />
           </div>
         </div>
         <p className="text-center pt-2 text-sm">Developed by Wilfred Mutwiri <span className="text-blue-600 hover:text-yellow-400 cursor-pointer"><a href="https://wilfredmutwiri.vercel.app/" target="_blanck"> View Portfolio</a></span></p>
