@@ -30,12 +30,14 @@ const UpdatesPage = () => {
       <div className="-mt-[600px] md:-mt-[700px] relative inset-0 flex flex-col justify-center items-center text-white z-10">
           <div className='flex w-full md:w-7/12 mx-auto pt-0 md:pt-28'>
           <div className='w-full mx-auto  z-50 p-0 md:p-3 font-bold'>
-          <h1 className='shadow-sm shadow-gray-600 text-center text-orange-500 font-bold text-4xl md:text-7xl font-serif'>Beach Life Fitness</h1>
-          <h2 className='text-2xl text-white text-center pt-4'>~Kenya~</h2>
+          <div className='z-50 w-11/12 mx-auto md:w-full flex flex-col gap-2 font-serif text-4xl md:text-6xl'>
+          <h2 className='text-center  text-cyan-400 ml-2 md:ml-4'> Diani</h2>
+          <h1 className='text-center text-orange-500 font-bold'> Beach <span className='text-cyan-400 '>Life </span>Fitness</h1>
+          <h2 className='text-center text-cyan-400 ml-7 md:ml-10'>Kenya</h2>
           </div>
           </div>
-          <h2 className='text-white z-50 relative text-center font-serif text-xl md:text-3xl pt-5'>Learn what is 
-          <span className='text-blue-500'> In store</span> for you!</h2>
+          </div>
+          <h2 className='text-white z-50 relative text-center font-serif text-xl md:text-3xl pt-5'>Learn what is in store for you!</h2>
           <h3 className='text-sm md:text-lg pt-4'>Holistic Fitness for a Healthier Life
           </h3>
         <div className='flex gap-5 justify-center mt-28 md:mt-10'>
