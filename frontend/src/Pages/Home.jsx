@@ -17,6 +17,7 @@ import { SlCalender } from "react-icons/sl";
 import { FaArrowRight } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 import { Button, Label } from 'flowbite-react';
 export default function Home() {
@@ -60,16 +61,39 @@ export default function Home() {
       </div>
       </header>
       <main>
+        <div className='relative z-50 mt-[700px] bg-gray-500 pt-10 pb-10 pl-5 pr-5'>
+          <div className='font-semibold flex justify-between gap-2 md:gap-6'>
+          <div>
+            <h2 className='font-bold text-xl md:text-3xl text-cyan-400'>Trainees</h2>
+            <h3 className='text-center text-2xl text-white'>20+</h3>
+          </div>
+          <div>
+            <h2 className='font-bold text-xl md:text-3xl text-cyan-400'>Programs</h2>
+            <h3 className='text-center text-2xl text-white'>50+</h3>
+          </div>
+          <div>
+            <h2 className='font-bold text-xl md:text-3xl text-cyan-400'>Events</h2>
+            <h3 className='text-center text-2xl text-white'>100+</h3>
+          </div>  
+          <div>
+            <h2 className='font-bold text-xl md:text-3xl text-cyan-400'>Members</h2>
+            <h3 className='text-center text-2xl text-white'>500+</h3>
+          </div>
+          </div>
+        </div>
         {/* about section */}
         <section>
-          <div className='relative bg-gray-100 mt-[630px] '>
-            <div className='pt-16 block w-11/12 mx-auto md:flex gap-20'>
-            <div className=''>
+          <div className='text-center pt-10'>
+          <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>ABOUT US</h2>
+          <h3 className='text-base md:text-2xl pt-4 font-semibold text-center'>________ Welcome To Beach Life Fitness! ________</h3>
+          </div>
+          <div className='relative bg-gray-100 pt-10'>
+            <div className='block w-11/12 mx-auto md:flex gap-20'>
+            <div className='w-full md:w-11/12'>
             <img src={bikeRideImg} className='h-96 w-full mx-auto object-cover rounded-md'/>
           </div>
-          <div className='w-11/12 mx-auto flex-1 mt-10 md:mt-5'>
-            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-20'>ABOUT US</h2>
-          <h3 className='text-2xl pt-4 font-semibold pb-2'>Welcome To Beach Life Fitness</h3>
+          <div className='w-11/12 mx-auto'>
+          <h3 className='text-2xl pt-4 font-semibold pb-2'>Our Story</h3>
             <p className='leading-relaxed'>
             Indoor and Outdoor fitness group. We focus on physical fitness, empowerment and fun. Our passion is to create positive physical changes for all ages, sizes and fitness levels. We bring the adventures , you bring the energy
             </p>
@@ -81,10 +105,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className='w-11/12 mx-auto bg-green-600 text-white mt-4 p-5'>
-          <p className='text-center font-semibold text-sm md:text-lg'>
+        <div className=' mx-auto bg-green-600 text-white mt-10 p-5 pb-8 pt-8'>
+        <div className='w-11/12 mx-auto'>
+        <p className='text-center font-semibold text-sm md:text-lg'>
           At our gym, you'll find more than just a workout—it's a lifestyle. With customized training plans and a vibrant community, you'll stay motivated and inspired to achieve your best self.
           </p>
+        </div>
         </div>
       {/* updates section */}
       <section>
@@ -93,6 +119,7 @@ export default function Home() {
         <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR UPDATES</h2>
         <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
         </div>
+        <h3 className='text-base md:text-2xl pt-4 font-semibold text-center'>________ We have these in store for you! ________</h3>
         <div className='pt-14 block w-11/12 mx-auto md:flex gap-20'>
           <div className='flex-1 bg-white shadow-sm shadow-gray-300 rounded-md'>
           <img src={waterFallImg} className="h-80 object-cover w-full rounded-md hover:transform hover:scale-95 transition duration-1000 ease-out" />
@@ -134,51 +161,25 @@ export default function Home() {
           </div>
           </div>
       </section>
-      <div className='w-11/12 mx-auto bg-cyan-800 text-white pt-8 pb-8 p-5'>
-          <p className='text-center font-semibold text-sm md:text-lg'>
+      <div className=' mx-auto bg-cyan-800 text-white pt-8 pb-8 p-5'>
+        <div className='mx-auto w-11/12'>
+        <p className='text-center font-semibold text-sm md:text-lg'>
           Transform your body and elevate your fitness journey at our beach-life gym, where expert trainers and cutting-edge equipment help you achieve your goals. Join us today and experience a supportive community that motivates and inspires you every step of the way.
           </p>
+        </div>
         </div>
       {/* products section */}
       <section>
         <div className='pt-16 pb-10 bg-gray-100'>
         <div className='flex justify-between w-11/12 mx-auto'>
-        <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR PRODUCTS</h2>
-        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
+        <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR PRODUCTS</h2> 
         </div>
-        <div className='hidden md:flex flex-row gap-6 pt-5 pb-5 w-11/12 mx-auto'>
-          <div className='flex-1'>
-            <img src={product1} alt='mountain bike'/>
-            <div className='bg-gray-200 p-3'>
-              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
-              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
-              <h3 className='font-semibold text-sm'>Description: <span className='text-cyan-800'>Short time & long time hire</span></h3>
-              <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
-            </div>
-          </div>
-          <div className='flex-1'>
-            <div className='h-72'>
-            <img src={product2} alt='mountain bike'/>
-            </div>
-          <div className='bg-gray-200 p-3'>
-              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$200.00</span></h2>
-              <h3 className='font-semibold'>status: <span className='text-green-600'>Available</span></h3>
-              <h3 className='font-semibold text-sm'>Description: <span className='text-cyan-800'>Short time & long time hire</span></h3>
-              <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
-            </div>
-          </div>
-          <div className='flex-1'>
-          <img src={product2} alt='mountain bike'/>
-          <div className='bg-gray-200 p-3'>
-              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
-              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
-              <h3 className='font-semibold text-sm'>Description: <span className='text-cyan-800'>Short time & long time hire</span></h3>
-              <Button className='mt-4' gradientDuoTone="greenToBlue">Enquire Now</Button>
-            </div>
-          </div>
+        <div>
+        <h3 className='text-base md:text-2xl pt-4 font-semibold text-center'>________ We have These and More! ________</h3>
         </div>
-        {/* available on small devices only */}
-        <div className='lg:hidden w-11/12 mx-auto mt-6'>
+        <div className='block md:flex order-2 gap-6 w-11/12 mx-auto mt-10'>
+          <div className='flex-1'>
+          <div className='w-11/12 mx-auto mt-6'>
         <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} interval={3000}>
       <div>
         <img src={product1} alt="mountain bike" />
@@ -206,12 +207,29 @@ export default function Home() {
       </div>
     </Carousel>
         </div>
+          </div>
+          <div className='flex-1 pt-5 leading-relaxed'>
+            <p>
+            At Beach-life Gym, we are determined to offer the best products in the market for your adventure endeavors as well and personal fitness. Our products range from outdoor to indoor products. You can purchase these products but clicking on the link beneath each product or contacting our admins.
+            </p>
+            <p>
+              Some of our products include:
+              <ul>
+                <li>Mountain Bikes</li>
+                <li>Tents</li>
+              </ul>
+            </p>
+            <h2 className='bg-cyan-400 p-2 w-48 rounded-md shadow-sm text-center font-semibold text-gray-800 mt-2 flex gap-2 mx-auto'>Request A Product <span className="text-orange-800 text-2xl"><IoArrowForwardCircleOutline/></span></h2>
+          </div>
+        </div>
         </div>
       </section>
-      <div className='bg-gray-900 text-white p-5 w-11/12 mx-auto'>
+      <div className='bg-gray-900 text-white p-5 mx-auto pt-8 pb-8'>
+        <div className='w-11/12 mx-auto'>
         <p className='leading-relaxed text-sm md:text-lg'>
         Elevate your fitness experience in a space designed for results, with cutting-edge equipment and innovative classes that keep you engaged. Our team is dedicated to helping you break through barriers and achieve lasting success
         </p>
+        </div>
       </div>
       {/* media section */}
       <section>
@@ -220,6 +238,7 @@ export default function Home() {
         <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR MEDIA</h2>
         <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
         </div>
+        <h3 className='text-base md:text-2xl pt-4 font-semibold text-center'>________ Get motivated! ________</h3>
         {/* available on large devices */}
         <div className='hidden md:flex flex-row gap-6 w-11/12 mx-auto pt-10 pb-10'>
           <div className='flex-1'>

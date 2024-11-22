@@ -7,6 +7,8 @@ import img3 from '../assets/updates3.jpeg'
 import img4 from '../assets/updates4.jpeg'
 import { Button } from 'flowbite-react';
 
+import img5 from '../assets/467293380_1199411358476302_2107245154880577261_n.jpg'
+import img6 from '../assets/467402193_1199411521809619_8759466024656116741_n.jpg'
 const UpdatesPage = () => {
     const homeBannerImages=[img1,img2,img3,img4]
     return (
@@ -47,22 +49,29 @@ const UpdatesPage = () => {
       </div>
       </div>
       </header>
+      {/* main section */}
             <div className='w-11/12 mx-auto pt-10 relative mt-[630px] '>
             <h2 className='text-sm mx-auto text-blue-600 font-semibold border-r-2 border-orange-600 w-32'>Our Updates</h2>
+            <h3 className='text-base md:text-2xl pt-4 font-semibold text-center'>________ All we have for You! ________</h3>
             </div>
+            {/* updates section*/}
             <div className='flex flex-col gap-8 pt-10 pb-10 w-11/12 mx-auto'>
-            <div>
-            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-32'>1. Bike Camping</h2> 
-            <p>
+            <div className='block md:flex gap-10'>
+            <div className=''>
+            <h2 className='text-lg text-blue-600 font-semibold border-r-2 border-orange-600 bg-gray-50 p-1'>~Bike Camping~</h2> 
+            <img className='' src={img5}/>
+            <p className='leading-relaxed pt-2 pb-4'>
             Experience the great outdoors like never before! Join us for our exciting bike camping trips, where adventure meets nature. Enjoy scenic routes, fresh air, and the thrill of cycling through picturesque landscapes. Whether you’re a seasoned cyclist or a beginner, our guided tours promise an unforgettable experience. Don’t forget to pack your essentials and get ready for a weekend filled with fun and camaraderie!
             </p>
             </div>
-            <div>
-            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-40'>2. Camping Tents Rental  
-            </h2> 
-            <p>
+            <hr className='block md:hidden'/>
+            <div className='mt-10 md:mt-0'>
+            <h2 className='text-lg text-blue-600 font-semibold border-r-2 border-orange-600 bg-gray-50 p-1'>~ Camping Tents Rental~</h2>
+            <img className='' src={img6}/> 
+            <p className='leading-relaxed pt-2'>
             Planning a camping trip? We’ve got you covered! Rent high-quality camping tents from Beach Life Gym to make your outdoor experience comfortable and enjoyable. Our tents are easy to set up and designed for all weather conditions. Choose from a variety of sizes to suit your group, and enjoy a cozy night under the stars. Contact us to reserve your tent today!
             </p>
+            </div>
             </div>
             <div>
             <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-48'>3.Maji Moto Bike Adventure 
