@@ -9,6 +9,9 @@ import { Button } from 'flowbite-react';
 
 import img5 from '../assets/467293380_1199411358476302_2107245154880577261_n.jpg'
 import img6 from '../assets/467402193_1199411521809619_8759466024656116741_n.jpg'
+import img7 from '../assets/waterfall_1693140591QfdwUr.webp';
+import img8 from '../assets/personal.jpeg';
+import img9 from '../assets/updates1.jpeg';
 const UpdatesPage = () => {
     const homeBannerImages=[img1,img2,img3,img4]
     return (
@@ -56,6 +59,7 @@ const UpdatesPage = () => {
             </div>
             {/* updates section*/}
             <div className='flex flex-col gap-8 pt-10 pb-10 w-11/12 mx-auto'>
+            {/* first div */}
             <div className='block md:flex gap-10'>
             <div className=''>
             <h2 className='text-lg text-blue-600 font-semibold border-r-2 border-orange-600 bg-gray-50 p-1'>~Bike Camping~</h2> 
@@ -73,33 +77,44 @@ const UpdatesPage = () => {
             </p>
             </div>
             </div>
-            <div>
-            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-48'>3.Maji Moto Bike Adventure 
-            </h2> 
-            <p>
+
+            {/* second div */}
+            <div className='block md:flex gap-10'>
+            <div className=' mt-10 md:mt-0'>
+            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-full p-2 bg-gray-100'>3.Maji Moto Bike Adventure</h2>
+            <img src={img7} className='h-72 w-full object-cover'/> 
+            <p className='leading-relaxed pt-2'>
             Get ready for an adrenaline-pumping experience with our Maji Moto Bike Adventure! Ride through stunning trails while taking in breathtaking views of the surrounding landscape. This thrilling adventure is perfect for those looking to challenge themselves and explore nature in a unique way. Join us for a day of excitement, laughter, and unforgettable memories on two wheels!
             </p>
             </div>
-            <div>
-            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-40'>4. Personal Training
-            </h2> 
-            <p>
+
+            <div className=' mt-10 md:mt-0'>
+            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-full p-2 bg-gray-100'>4. Personal Training
+            </h2>
+            <img src={img4} className='h-72 w-full object-cover'/> 
+            <p className='leading-relaxed'>
             Elevate your fitness journey with our personalized training sessions! Our certified trainers will work with you to develop a customized workout plan tailored to your goals and fitness level. Whether you're looking to lose weight, build strength, or improve overall fitness, our trainers are here to guide and motivate you every step of the way. Sign up today and take the first step towards a healthier you!
             </p>
             </div>
-            <div>
-            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-48'>5. Corporate Team Building
-            </h2> 
+            </div>
+            {/* third div */}
+            <div className='block md:flex gap-10'>
+            <div className=' mt-10 md:mt-0'>
+            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-full p-2  bg-gray-100'>5. Corporate Team Building
+            </h2>
+            <img src={img9} className='h-72 w-full object-cover'/> 
             <p>
             Looking for a unique way to strengthen your team? Our corporate team-building programs are designed to enhance collaboration, communication, and camaraderie among employees. Engage in fun and challenging activities that promote teamwork and build lasting relationships. Tailored to your company’s needs, our programs will help your team thrive both in and out of the workplace. Contact us for more information!
             </p>
             </div>
-            <div>
-            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-44'>6. Let’s Hiking: Vuria Hills
-            </h2> 
+            <div className=' mt-10 md:mt-0'>
+            <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-full bg-gray-100 p-2'>6. Let’s Hiking: Vuria Hills
+            </h2>
+            <img src={img8}/> 
             <p>
             Join us for a breathtaking hiking adventure at Vuria Hills! This guided hike offers stunning views, fresh air, and the chance to connect with nature. Perfect for hikers of all levels, our experienced guides will lead you through scenic trails while sharing insights about the local flora and fauna. Pack your water and snacks, and get ready to explore the beauty of Vuria Hills with us!
             </p>
+            </div>
             </div>
             </div>
 </div>
