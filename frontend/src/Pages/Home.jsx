@@ -1,7 +1,7 @@
 import React from 'react'
 import {Carousel} from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import img1 from '../assets/banner1.webp'
+import img1 from '../assets/beachWorkout.webp'
 import img2 from '../assets/banner2.webp'
 import img3 from '../assets/banner3.webp'
 import img4 from '../assets/banner4.webp'
@@ -13,8 +13,8 @@ import product2 from '../assets/tent.webp'
 import viewWaterfall from '../assets/beachlifefitnesskenya_1693076200hqBv4S.webp'
 import droneViewWaterfallImg from '../assets/droneWaterfall view.webp'
 import bannerImg from '../assets/banner3.webp';
-import fitness1 from '../assets/fitness1.jpeg';
-import fitness2 from '../assets/updates4.jpeg';
+import fitness1 from '../assets/weightLisfting.webp';
+import fitness2 from '../assets/strengthTraining.webp';
 
 import { SlCalender } from "react-icons/sl";
 import { FaArrowRight } from "react-icons/fa";
@@ -134,7 +134,7 @@ export default function Home() {
         <div className='flex flex-col md:flex-row w-11/12 mx-auto gap-4 mt-10 mb-14'>
           <div className='flex-1 mb-10 md:mb-0'>
             <img src={img1} className='h-[280px] w-full object-cover'/>
-            <h2 className='text-2xl font-semibold bg-gray-400 p-2 w-full border-8 border-r-orange-500 border-l-orange-500 hover:text-white hover:bg-black cursor-pointer'> :: BODY BUILDING</h2>
+            <h2 className='text-2xl font-semibold bg-gray-400 p-2 w-full border-8 border-r-orange-500 border-l-orange-500 hover:text-white hover:bg-black cursor-pointer'> :: BEACH WORKOUT</h2>
           </div>
           <div className='flex-1 mb-10 md:mb-0'>
             <img src={fitness1} className='h-[280px] w-full object-cover'/>
@@ -142,7 +142,7 @@ export default function Home() {
           </div>
           <div className='flex-1'>
             <img src={fitness2} className='h-[280px] w-full object-cover'/>
-            <h2 className='text-2xl font-semibold bg-gray-400 p-2 w-full border-8 border-r-orange-500 border-l-orange-500 hover:text-white hover:bg-black cursor-pointer'>:: CARDIO</h2>
+            <h2 className='text-2xl font-semibold bg-gray-400 p-2 w-full border-8 border-r-orange-500 border-l-orange-500 hover:text-white hover:bg-black cursor-pointer'>:: STRENGHT TRAINING</h2>
           </div>
 
         </div>
