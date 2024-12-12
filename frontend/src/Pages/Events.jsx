@@ -30,8 +30,8 @@ const EventsPage = () => {
     const palmwineImages=[palm1,palm2,palm3,palm4];
     const bikeCombiImages=[bikeCombi1,bikeCombi2,bikeCombi3,bikeCombi4,bikeCombi5];
     return (
-        <div>
-                <header className=''>
+      <div>
+      <header className=''>
       <div className='max-w-[1400px] h-[70px] w-full m-auto'>
       {/* home carousel */}
       <div>

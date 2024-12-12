@@ -104,9 +104,9 @@ export default function Home() {
             Indoor and Outdoor fitness group. We focus on physical fitness, empowerment and fun. Our passion is to create positive physical changes for all ages, sizes and fitness levels. We bring the adventures , you bring the energy
             </p>
             <div className='font-semibold text-sm pt-5 flex flex-col gap-4'>
-              <h1 className='flex text-cyan-700 hover:text-orange-600'><a href='#'>:: Full body fitness Programme</a> <span><FaArrowRight className='pl-1 mt-1'/></span></h1>
-              <h1 className='flex text-cyan-700 hover:text-orange-600'><a href='#'>:: Training Schedules</a> <span><FaArrowRight className='pl-1 mt-1'/></span></h1>
-              <h1 className='flex text-cyan-700 hover:text-orange-600'><a href='#'>:: Our Activities</a> <span><FaArrowRight className='pl-1 mt-1'/></span></h1>
+              <h1 className='flex text-cyan-700 hover:text-orange-600'><a href='/sessions'>:: Full body fitness Programme</a> <span><FaArrowRight className='pl-1 mt-1'/></span></h1>
+              <h1 className='flex text-cyan-700 hover:text-orange-600'><a href='/sessions'>:: Training Schedules</a> <span><FaArrowRight className='pl-1 mt-1'/></span></h1>
+              <h1 className='flex text-cyan-700 hover:text-orange-600'><a href='/events'>:: Our Activities</a> <span><FaArrowRight className='pl-1 mt-1'/></span></h1>
             </div>
             <div className='flex flex-row gap-6 mt-10 w-full justify-center md:justify-normal'>
               <Button className='flex' gradientDuoTone="greenToBlue"><FaPhone className='text-lg'/><span className='ml-3'>Call Us</span></Button>
@@ -127,7 +127,7 @@ export default function Home() {
         <section>
         <div className='flex justify-between w-11/12 mx-auto mt-5'>
         <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR CLASSES</h2>
-        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
+        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'><a href='/events'>View All</a><FaArrowRight className=' text-lg pl-1'/></Label>
         </div>
         <h3 className='text-base md:text-2xl pt-4 font-semibold text-center'>________<span className='text-cyan-600'>BeachLife</span> Workout Classes! ________</h3>
         </section>
@@ -151,7 +151,7 @@ export default function Home() {
       <div className='relative pt-5 pb-5'>
         <div className='flex justify-between w-11/12 mx-auto'>
         <h2 className='mt-4 text-blue-600 font-semibold border-r-2 border-orange-600 w-32 mx-auto'>OUR UPDATES</h2>
-        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
+        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'><a href='/updates'>View All</a><FaArrowRight className=' text-lg pl-1'/></Label>
         </div>
         <h3 className='text-base md:text-2xl pt-4 font-semibold text-center'>________ We have these in store for you! ________</h3>
         <div className='pt-14 block w-11/12 mx-auto md:flex gap-20'>
@@ -164,7 +164,7 @@ export default function Home() {
             </p>
             <div className='flex justify-between p-3'>
               <h3 className='flex gap-2 text-orange-500 font-semibold text-sm mt-3'><SlCalender className='text-green-600 text-lg'/> August 29th 2023</h3>
-            <Button className="" gradientDuoTone="greenToBlue">Read More..</Button>
+            <Button className="" gradientDuoTone="greenToBlue"><a href='/updates'>Read More...</a></Button>
             </div>
           </div>
           <div className='flex-1 mt-6 md:mt-0 bg-white shadow-sm shadow-gray-300 rounded-md'>
@@ -176,7 +176,7 @@ export default function Home() {
             </p>
             <div className='flex justify-between p-3'>
               <h3 className='flex gap-2 text-orange-500 font-semibold text-sm mt-3'><SlCalender className='text-green-600 text-lg'/> August 29th 2023</h3>
-            <Button className="" gradientDuoTone="greenToBlue">Read More..</Button>
+              <Button className="" gradientDuoTone="greenToBlue"><a href='/updates'>Read More...</a></Button>
             </div>
           </div>
 
@@ -189,7 +189,7 @@ export default function Home() {
           </p>
           <div className='p-3 flex justify-between'>
               <h3 className='flex gap-2 text-orange-500 font-semibold text-sm mt-3'><SlCalender className='text-green-600 text-lg'/> August 29th 2023</h3>
-            <Button className="" gradientDuoTone="greenToBlue">Read More..</Button>
+              <Button className="" gradientDuoTone="greenToBlue"><a href='/updates'>Read More...</a></Button>
             </div>
           </div>
           </div>
@@ -253,7 +253,8 @@ export default function Home() {
                 <li>Tents</li>
               </ul>
             </p>
-            <h2 className='bg-cyan-400 p-2 w-48 rounded-md shadow-sm text-center font-semibold text-gray-800 mt-10 flex gap-2 mx-auto md:mx-0'>Request A Product <span className="text-orange-800 text-2xl"><IoArrowForwardCircleOutline/></span></h2>
+            <a href='/products'>
+            <h2 className='bg-cyan-400 p-2 w-48 rounded-md shadow-sm text-center font-semibold text-gray-800 mt-10 flex gap-2 mx-auto md:mx-0'>Request A Product <span className="text-orange-800 text-2xl"><IoArrowForwardCircleOutline/></span></h2></a>
           </div>
         </div>
         </div>
@@ -286,14 +287,18 @@ export default function Home() {
             <img src={viewWaterfall} className='h-96 w-full object-cover' alt='viewWaterfall image'/>
             <div className='p-5 bg-gray-900 flex justify-between '>
               <p className='text-cyan-500 font-semibold text-lg'>Mkurumudzi waterfalls</p>
+              <a href='/updates'>
               <Label className='text-yellow-500 p-1 cursor-pointer hover:text-blue-500'>View Details</Label>
+              </a>
             </div>
           </div>
           <div className='flex-1'>
             <img src={droneViewWaterfallImg} className='h-96 w-full object-cover' alt='droneWaterfall image'/>
             <div className='p-5 bg-gray-900 flex justify-between '>
-              <p className='text-cyan-500 font-semibold text-lg'>Mkurumudzi waterfalls Mountain bike adventure</p>
+              <p className='text-cyan-500 font-semibold text-lg'>Mkurumudzi waterfalls adventure</p>
+              <a href='/updates'>
               <Label className='text-yellow-500 p-1 cursor-pointer hover:text-blue-500'>View Details</Label>
+              </a>
             </div>
           </div>
         </div>
@@ -305,21 +310,27 @@ export default function Home() {
             <img src={waterFallImg} className='h-96 w-full object-cover' alt='waterfall image'/>
             <div className='p-5 bg-gray-900 flex justify-between '>
               <p className='text-cyan-500 font-semibold text-lg'>Waterfall View</p>
+              <a href='/updates'>
               <Label className='text-yellow-500 p-1 cursor-pointer hover:text-blue-500'>View Details</Label>
+              </a>
             </div>
           </div>
           <div className='flex-1'>
             <img src={viewWaterfall} className='h-96 w-full object-cover' alt='viewWaterfall image'/>
             <div className='p-5 bg-gray-900 flex justify-between '>
               <p className='text-cyan-500 font-semibold text-lg'>Mkurumudzi waterfalls</p>
+              <a href='/updates'>
               <Label className='text-yellow-500 p-1 cursor-pointer hover:text-blue-500'>View Details</Label>
+              </a>
             </div>
           </div>
           <div className='flex-1'>
             <img src={droneViewWaterfallImg} className='h-96 w-full object-cover' alt='droneWaterfall image'/>
             <div className='p-5 bg-gray-900 flex justify-between '>
-              <p className='text-cyan-500 font-semibold text-lg'>Mkurumudzi waterfalls Mountain bike adventure</p>
+              <p className='text-cyan-500 font-semibold text-lg'>Mkurumudzi waterfalls Adventure</p>
+              <a href='/updates'>
               <Label className='text-yellow-500 p-1 cursor-pointer hover:text-blue-500'>View Details</Label>
+              </a>
             </div>
           </div>
     </Carousel>

@@ -24,10 +24,10 @@ export default function NavBarComp() {
         <Navbar.Link as={Link} to="/events" active={location.pathname === "/events"}>
           Events
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/more-pages" active={location.pathname === "/more-pages"}>
-          More Pages
+        <Navbar.Link as={Link} to="/sessions" active={location.pathname === "/sessions"}>
+          Our Sessions
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/contact" active={location.pathname === "/contact"}>
+        <Navbar.Link as={Link} to="/contacts" active={location.pathname === "/contacts"}>
           Contact Us
         </Navbar.Link>
       </Navbar.Collapse>
