@@ -4,13 +4,13 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import img1 from '../assets/updates1.jpeg'
 import img2 from '../assets/updates2.jpeg'
 import img3 from '../assets/updates3.jpeg'
-import img4 from '../assets/updates4.jpeg'
+import img4 from '../assets/personalTraining.webp'
 import { Button } from 'flowbite-react';
 
-import img5 from '../assets/467293380_1199411358476302_2107245154880577261_n.jpg'
-import img6 from '../assets/467402193_1199411521809619_8759466024656116741_n.jpg'
+import img5 from '../assets/bikecamping.webp'
+import img6 from '../assets/tentRental.webp'
 import img7 from '../assets/waterfall_1693140591QfdwUr.webp';
-import img8 from '../assets/personal.jpeg';
+import img8 from '../assets/hillHiking.webp';
 import img9 from '../assets/updates1.jpeg';
 const UpdatesPage = () => {
     const homeBannerImages=[img1,img2,img3,img4]
@@ -63,7 +63,7 @@ const UpdatesPage = () => {
             <div className='block md:flex gap-10'>
             <div className=''>
             <h2 className='text-lg text-blue-600 font-semibold border-r-2 border-orange-600 bg-gray-50 p-1'>~Bike Camping~</h2> 
-            <img className='' src={img5}/>
+            <img src={img5} className='h-72 w-full object-cover'/>
             <p className='leading-relaxed pt-2 pb-4'>
             Experience the great outdoors like never before! Join us for our exciting bike camping trips, where adventure meets nature. Enjoy scenic routes, fresh air, and the thrill of cycling through picturesque landscapes. Whether you’re a seasoned cyclist or a beginner, our guided tours promise an unforgettable experience. Don’t forget to pack your essentials and get ready for a weekend filled with fun and camaraderie!
             </p>
@@ -71,7 +71,7 @@ const UpdatesPage = () => {
             <hr className='block md:hidden'/>
             <div className='mt-10 md:mt-0'>
             <h2 className='text-lg text-blue-600 font-semibold border-r-2 border-orange-600 bg-gray-50 p-1'>~ Camping Tents Rental~</h2>
-            <img className='' src={img6}/> 
+            <img className='h-72 w-full object-cover' src={img6}/> 
             <p className='leading-relaxed pt-2'>
             Planning a camping trip? We’ve got you covered! Rent high-quality camping tents from Beach Life Gym to make your outdoor experience comfortable and enjoyable. Our tents are easy to set up and designed for all weather conditions. Choose from a variety of sizes to suit your group, and enjoy a cozy night under the stars. Contact us to reserve your tent today!
             </p>
@@ -102,6 +102,10 @@ const UpdatesPage = () => {
             <div className=' mt-10 md:mt-0'>
             <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-full p-2  bg-gray-100'>5. Corporate Team Building
             </h2>
+            {/* <video controls width={600}>
+              <source src='https://fb.watch/wqFSjPX5RR/' type='video/mp4'/>
+              Video can't play
+            </video> */}
             <img src={img9} className='h-72 w-full object-cover'/> 
             <p>
             Looking for a unique way to strengthen your team? Our corporate team-building programs are designed to enhance collaboration, communication, and camaraderie among employees. Engage in fun and challenging activities that promote teamwork and build lasting relationships. Tailored to your company’s needs, our programs will help your team thrive both in and out of the workplace. Contact us for more information!
@@ -110,7 +114,7 @@ const UpdatesPage = () => {
             <div className=' mt-10 md:mt-0'>
             <h2 className='text-sm text-blue-600 font-semibold border-r-2 border-orange-600 w-full bg-gray-100 p-2'>6. Let’s Hiking: Vuria Hills
             </h2>
-            <img src={img8}/> 
+            <img src={img8} className='h-72 w-full object-cover'/> 
             <p>
             Join us for a breathtaking hiking adventure at Vuria Hills! This guided hike offers stunning views, fresh air, and the chance to connect with nature. Perfect for hikers of all levels, our experienced guides will lead you through scenic trails while sharing insights about the local flora and fauna. Pack your water and snacks, and get ready to explore the beauty of Vuria Hills with us!
             </p>
