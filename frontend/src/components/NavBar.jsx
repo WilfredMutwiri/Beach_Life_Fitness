@@ -21,8 +21,8 @@ export default function NavBarComp() {
         <Navbar.Link as={Link} to="/products" active={location.pathname === "/products"}>
           Products
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/media" active={location.pathname === "/media"}>
-          Media
+        <Navbar.Link as={Link} to="/events" active={location.pathname === "/events"}>
+          Events
         </Navbar.Link>
         <Navbar.Link as={Link} to="/more-pages" active={location.pathname === "/more-pages"}>
           More Pages

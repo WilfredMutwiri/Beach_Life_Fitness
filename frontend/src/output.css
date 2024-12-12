@@ -1489,6 +1489,10 @@ input[type="range"]::-ms-fill-lower {
   height: 1.75rem;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1507,6 +1511,10 @@ input[type="range"]::-ms-fill-lower {
 
 .h-\[280px\] {
   height: 280px;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-\[700px\] {
@@ -1544,14 +1552,6 @@ input[type="range"]::-ms-fill-lower {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-72 {
-  height: 18rem;
 }
 
 .max-h-\[90dvh\] {
@@ -1620,14 +1620,6 @@ input[type="range"]::-ms-fill-lower {
 
 .w-4 {
   width: 1rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-44 {
-  width: 11rem;
 }
 
 .w-48 {
@@ -2966,6 +2958,11 @@ input[type="range"]::-ms-fill-lower {
 
 .fill-yellow-400 {
   fill: #E3A008;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -6135,6 +6132,11 @@ input[type="range"]::-ms-fill-lower {
     inset: 0px;
   }
 
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -6150,13 +6152,12 @@ input[type="range"]::-ms-fill-lower {
     margin-bottom: 3rem;
   }
 
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .md\:-mt-\[700px\] {
     margin-top: -700px;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:ml-10 {
@@ -6177,10 +6178,6 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:block {

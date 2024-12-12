@@ -11,7 +11,7 @@ import img5 from '../assets/bikecamping.webp'
 import img6 from '../assets/tentRental.webp'
 import img7 from '../assets/waterfall_1693140591QfdwUr.webp';
 import img8 from '../assets/hillHiking.webp';
-import img9 from '../assets/updates1.jpeg';
+import img9 from '../assets/teamBulding.webp';
 const UpdatesPage = () => {
     const homeBannerImages=[img1,img2,img3,img4]
     return (
