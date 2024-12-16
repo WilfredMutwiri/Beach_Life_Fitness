@@ -2,12 +2,13 @@ import React from 'react'
 import {Carousel} from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import img1 from '../assets/mountain-b_1693287593rOnMaD.webp'
-import img2 from '../assets/tent.webp'
-import img3 from '../assets/tentRental.webp'
+import img2 from '../assets/tent.webp';
+import img3 from '../assets/tent2.webp'
 import { Button } from 'flowbite-react';
+import speakersImg from '../assets/speakers.webp';
 
 const ProductsPage = () => {
-    const homeBannerImages=[img1,img2,img3];
+    const homeBannerImages=[img1,img2,img3,speakersImg];
 
     return (
     <div>
@@ -56,18 +57,28 @@ const ProductsPage = () => {
         <div className='mt-10 w-11/12 mx-auto'>
             <div className='block md:flex gap-5 justify-between'>
                 <div className='bg-gray-100 mb-5'>
-                    <img src={img1} className='h-52'/>
+                    <img src={img1} className='h-52 mx-auto'/>
                     <div className='flex gap-10 p-3 justify-between'>
                     <h2 className='font-semibold text-xl'>Mountain Bike</h2>
                     <h2 className='text-lg text-red-600'><span className='text-2xl font-semibold text-orange-500'>Ksh:</span> 10,000</h2>
                     </div>
                     <Button className='w-full mt-2' gradientDuoTone="greenToBlue">Order Now!</Button>
                 </div>
-                <div className='bg-gray-100 mb-5'>
-                    <img src={img2} className='h-52'/>
+
+                <div className='bg-gray-100 mb-5 mt-10'>
+                    <img src={img2} className='h-52 mx-auto'/>
                     <div className='flex gap-10 p-3 justify-between'>
                     <h2 className='font-semibold text-xl'>Tents</h2>
                     <h2 className='text-lg text-red-600'><span className='text-2xl font-semibold text-orange-500'>Ksh:</span> 8,000</h2>
+                    </div>
+                    <Button className='w-full mt-2' gradientDuoTone="greenToBlue">Order Now!</Button>
+                </div>
+
+                <div className='bg-gray-100 mb-5 mt-10'>
+                    <img src={speakersImg} className='h-52 mx-auto'/>
+                    <div className='flex gap-6 p-3 justify-between'>
+                    <h2 className='font-semibold text-xl'>Sound System</h2>
+                    <h2 className='text-lg text-red-600'><span className='text-2xl font-semibold text-orange-500'>Ksh:</span> 10,000</h2>
                     </div>
                     <Button className='w-full mt-2' gradientDuoTone="greenToBlue">Order Now!</Button>
                 </div>

@@ -8,7 +8,7 @@ import img4 from '../assets/personalTraining.webp'
 import { Button } from 'flowbite-react';
 
 import img5 from '../assets/bikecamping.webp'
-import img6 from '../assets/tentRental.webp'
+import img6 from '../assets/tent.webp'
 import img7 from '../assets/waterfall_1693140591QfdwUr.webp';
 import img8 from '../assets/hillHiking.webp';
 import img9 from '../assets/teamBulding.webp';

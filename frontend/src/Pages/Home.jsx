@@ -5,8 +5,8 @@ import img1 from '../assets/beachWorkout.webp'
 import img2 from '../assets/banner2.webp'
 import img3 from '../assets/banner3.webp'
 import img4 from '../assets/banner4.webp'
-import bikeRideImg from '../assets/bike-and-b_1693079646eSb59n.webp'
-import bikeRideImg2 from '../assets/bike-to-tr_1693079465OibCKT.webp'
+import bikeRideImg from '../assets/traditionalDancers.webp'
+import bikeRideImg2 from '../assets/chaletIsland.webp';
 import waterFallImg from '../assets/waterfall_1693140591QfdwUr.webp'
 import product1 from '../assets/mountain-b_1693287593rOnMaD.webp'
 import product2 from '../assets/tent.webp'
@@ -15,6 +15,7 @@ import droneViewWaterfallImg from '../assets/droneWaterfall view.webp'
 import bannerImg from '../assets/banner3.webp';
 import fitness1 from '../assets/weightLisfting.webp';
 import fitness2 from '../assets/strengthTraining.webp';
+import speakersImg from '../assets/speakers.webp';
 
 import { SlCalender } from "react-icons/sl";
 import { FaArrowRight } from "react-icons/fa";
@@ -142,7 +143,7 @@ export default function Home() {
           </div>
           <div className='flex-1'>
             <img src={fitness2} className='h-[280px] w-full object-cover'/>
-            <h2 className='text-2xl font-semibold bg-gray-400 p-2 w-full border-8 border-r-orange-500 border-l-orange-500 hover:text-white hover:bg-black cursor-pointer'>:: STRENGHT TRAINING</h2>
+            <h2 className='text-2xl font-semibold bg-gray-400 p-2 w-full border-8 border-r-orange-500 border-l-orange-500 hover:text-white hover:bg-black cursor-pointer'>:: STRENGTH TRAINING</h2>
           </div>
 
         </div>
@@ -167,6 +168,7 @@ export default function Home() {
             <Button className="" gradientDuoTone="greenToBlue"><a href='/updates'>Read More...</a></Button>
             </div>
           </div>
+
           <div className='flex-1 mt-6 md:mt-0 bg-white shadow-sm shadow-gray-300 rounded-md'>
           <img src={bikeRideImg2} className="h-80 object-cover w-full rounded-md hover:transform hover:scale-95 transition duration-1000 ease-out" />
           <h3 className='font-semibold text-orange-500 pt-3 p-3 pb-2 text-lg'>Bike and Beer Chale Island</h3>
@@ -215,27 +217,29 @@ export default function Home() {
           <div className='flex-1'>
           <div className='w-11/12 mx-auto mt-6'>
         <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} interval={3000}>
-      <div>
-        <img src={product1} alt="mountain bike" />
+      <div className='bg-gray-800'>
+        <img src={product1} className='h-60 object-contain' alt="mountain bike" />
         <div className='bg-gray-200 p-3'>
               <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
               <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
               <Button className='mt-4 w-10/12 mx-auto' gradientDuoTone="greenToBlue">Enquire Now</Button>
             </div>
       </div>
-      <div>
-        <img src={product2} alt="Image 2" />
+
+      <div className='bg-gray-800'>
+        <img src={product2} className='h-60 object-contain' alt="Image 2" />
         <div className='bg-gray-200 p-3'>
               <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$200.00</span></h2>
               <h3 className='font-semibold'>status: <span className='text-green-600'>Available</span></h3>
               <Button className='mt-4 w-10/12 mx-auto' gradientDuoTone="greenToBlue">Enquire Now</Button>
             </div>
       </div>
-      <div>
-        <img src={product2} alt="Image 3" />
+
+      <div className='bg-gray-800'>
+        <img src={speakersImg} className='h-60 object-contain' alt="Image 3" />
         <div className='bg-gray-200 p-3'>
-              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$150.00</span></h2>
-              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Out Of stock</span></h3>
+              <h2 className='font-semibold'>Price : <span className='text-xl text-orange-500'>$200.00</span></h2>
+              <h3 className='font-semibold'>status: <span className='text-yellow-600'>Available</span></h3>
               <Button className='mt-4 w-10/12 mx-auto' gradientDuoTone="greenToBlue">Enquire Now</Button>
             </div>
       </div>
@@ -251,6 +255,7 @@ export default function Home() {
               <ul>
                 <li>Mountain Bikes</li>
                 <li>Tents</li>
+                <li>Sound System</li>
               </ul>
             </p>
             <a href='/products'>
